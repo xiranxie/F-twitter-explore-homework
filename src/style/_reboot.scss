@@ -44,3 +44,15 @@ h1 {
   color: $heading-color;
   margin: 0;
 }
+
+button-color-blue {
+  color: $primary-color;
+  border-color: $primary-color;
+  background: transparent;
+}
+
+button-color-white {
+  color: $white;
+  border-color: transparent;
+  background: $primary-color;
+}

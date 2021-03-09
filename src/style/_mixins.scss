@@ -1,4 +1,21 @@
+@import "reboot";
+
 @mixin heading($font-size) {
   margin-top: 0;
   font-size: $font-size;
+}
+
+@mixin button-variant($color) {
+  @if $color == $primary-color {
+    @extend button-color-blue;
+  } @else {
+    @extend button-color-white;
+  }
+  &:hover {
+    @if $color == $primary-color {
+      @extend button-color-white;
+    } @else {
+      @extend button-color-blue;
+    }
+  }
 }

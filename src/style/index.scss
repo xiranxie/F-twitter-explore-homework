@@ -1,3 +1,97 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+
+nav {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1px solid $border-color;
+  padding: 20px 30px;
+}
+
+h1 {
+  @extend h1;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.nav-bar {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 4px 26px;
+  font-size: 14px;
+  margin: 0px 2px;
+  border-width: 1.5px;
+  &-log {
+    @include button-variant($primary-color);
+  }
+  &-register {
+    @include button-variant($white);
+  }
+}
+
+main {
+  text-align: center;
+}
+
+.login-frame {
+  display: inline-block;
+  width: auto;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin: 100px 0;
+}
+
+h2 {
+  color: $heading-color;
+  font-size: 20px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 16rem;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid $border-color;
+  outline: none;
+  color: $gray-light;
+  margin: 15px 0;
+}
+
+a {
+  display: block;
+  text-align: left;
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.two-button {
+  margin: 20px 0;
+}
+
+p {
+  color: $color-base;
+  margin: 10px 0;
+}
+
+.button {
+  width: 100%;
+  border-radius: 20px;
+  &-log {
+    @include button-variant($primary-color);
+  }
+  &-register {
+    @include button-variant($white);
+  }
+}
