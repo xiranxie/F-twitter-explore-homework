@@ -6,7 +6,7 @@ nav {
   display: flex;
   align-items: center;
   border-bottom: 0.1px solid $border-color;
-  padding: 20px 30px;
+  padding: 20px 200px;
 }
 
 h1 {
@@ -56,8 +56,13 @@ h2 {
 .user-info {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
-  width: 16rem;
+  margin-top: 30px;
+  width: 18rem;
+}
+
+span {
+  text-align: left;
+  font-size: 16px;
 }
 
 input {
